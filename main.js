@@ -12,8 +12,10 @@ let searchPage = document.querySelector(".search-page");
 change.onclick = function () {
     if (body.className === "theme-light") {
         body.classList.replace("theme-light", "theme-dark");
+        searchPage.classList.remove("search-shadow");
     } else {
         body.classList.replace("theme-dark", "theme-light");
+        searchPage.classList.add("search-shadow");
     }
 
     if (word.textContent === "DARK" || icon.src === "assets/icon-moon.svg") {
