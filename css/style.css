@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-neutral-900: #141D2F;
+    --color-neutral-800: #1E2A47;
+    --color-neutral-700: #2B3442;
+    --color-neutral-500: #4B6A9B;
+    --color-neutral-300: #697C9A;
+    --color-neutral-200: #90A4D4;
+    --color-neutral-100: #F6F8FF;
+
+    --color-blue-500: #0079FF;
+    --color-blue-300: #60ABFF;
+
+    --color-red-500: #F74646;
+
+    --font-space: "Space Mono", sans-serif;
+    --text-base: 15px;
+    --leading-base: 150%;
+
+    --breakpoint-tablet: 768px;
+    --breakpoint-desktop: 1440px;
+}
+
+body.theme-light {
+    --dark-color: #141D2F;
+    --grey-300: #697C9A;
+    --grey-200: #90A4D4;
+    --white-100: #F6F8FF;
+    --blue-light: #0079FF;
+    --blue-hover: #60ABFF;
+    --white-color: #fff;
+}
+
+
+body.theme-dark {
+    --white-100: #141D2F;
+    --white-color: #1E2A47;
+    --grey-300: #F6F8FF;
+    --grey-200: #90A4D4;
+    --blue-light: #0079FF;
+    --dark-color: #F6F8FF;
+}
+
+body {
+    font-family: "Space Mono", monospace !important;
+    background-color: var(--white-100) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 8rem;
+    max-width: 750px;
+    width: 100%;
+}
+
+.header .logo {
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--dark-color);
+}
+
+.header .theme-github {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header .theme-github .dark-light {
+    font-weight: 600;
+    color: var(--grey-300);
+}
+
+/* =============== Profile =================== */
+
+.search-page {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    max-width: 750px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.search-shadow {
+    box-shadow: 0 12px 20px #697c9a45;
+}
+
+.search-page img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.search-page input {
+    width: 400px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--dark-color);
+}
+
+@media (max-width: 573px) {
+    .search-page input {
+        width: 200px;
+    }
+}
+
+.search-page input::placeholder {
+    font-size: 20px;
+    color: var(--grey-200);
+}
+
+@media (max-width: 573px) {
+    .search-page input::placeholder {
+        font-size: 14px;
+    }
+}
+
+.search-page button {
+    margin-left: auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--blue-light);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+@media(max-width: 990px) {
+    .search-page button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* ============ Profile ================ */
+
+.profile {
+    max-width: 750px;
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 40px 30px;
+}
+
+@media(max-width: 990px) {
+    .profile {
+        flex-wrap: wrap;
+    }
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.profile p {
+    color: var(--blue-light);
+    margin-bottom: 2rem;
+}
+
+.profile .bio {
+    color: var(--grey-200);
+}
+
+.profile .date-user {
+    color: var(--grey-300);
+    font-size: 14px;
+}
+
+/* ========= repo-followers-following ==== */
+
+.repo-follower-following {
+    width: 100%;
+    background-color: var(--white-100);
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.repo-follower-following .name-repo,
+.repo-follower-following .name-followers,
+.repo-follower-following .name-following {
+    color: var(--grey-300);
+
+}
+
+.repo-follower-following .num-repo,
+.repo-follower-following .num-followers,
+.repo-follower-following .num-following {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.location-users img,
+.link-github img {
+    width: 10%;
+    height: 10%;
+    border-radius: unset;
+    object-fit: cover;
+}
+
+.twitter-account img,
+.company-git img {
+    width: 13%;
+    height: 13%;
+    border-radius: unset;
+    object-fit: cover;
+
+}
+
+
+.name-location,
+.name-link,
+.name-twitter,
+.name-company {
+    font-size: 14px;
+    color: var(--grey-300);
+}

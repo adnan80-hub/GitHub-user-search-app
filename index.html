@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GitHub user search app">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="theme-light">
+
+  <div class="container">
+    <div class="header d-flex justify-content-between aligh-items-center mb-3">
+      <div class="logo">devfinder</div>
+      <div class="theme-github d-flex gap-3 align-items-center">
+        <div class="dark-light">DARK</div>
+        <img class="moon-sun" src="assets/icon-moon.svg" alt="">
+      </div>
+    </div>
+    <div class="search-page search-shadow mb-4">
+      <img src="assets/icon-search.svg" alt="">
+      <input type="search" placeholder="Search GitHub username...">
+      <button>search</button>
+    </div>
+
+    <div class="profile d-flex gap-5">
+      <img class="img-user" src="assets/octocat.PNG" alt="">
+      <div class="side-info w-100">
+        <div class="head-info d-flex justify-content-between mb-4">
+          <div class="left-head">
+            <h1 class="name-profile">The Octocat</h1>
+            <p>@octocat</p>
+            <span class="bio">This profile has no bio</span>
+          </div>
+          <div class="date-user">joined <span class="num-day">25</span> <span class="month">Jan</span> <span
+              class="year">2011</span></div>
+        </div>
+
+        <div class="repo-follower-following d-flex align-items-center justify-content-between mb-4">
+          <div class="repo">
+            <div class="name-repo mb-3">Repo</div>
+            <div class="num-repo">8</div>
+          </div>
+          <div class="followers">
+            <div class="name-followers mb-3">Followers</div>
+            <div class="num-followers">22874</div>
+          </div>
+          <div class="following">
+            <div class="name-following mb-3">Following</div>
+            <div class="num-following">9</div>
+          </div>
+        </div>
+
+        <div class="address-users w-100 d-flex justify-content-between align-items-center  flex-wrap">
+          <div class="left-side">
+            <div class="location-users w-100 d-flex align-items-center mb-3">
+              <img class="me-3 " src="assets/icon-location.svg" alt="">
+              <div class="name-location ">San Francisco</div>
+            </div>
+
+            <div class="link-github d-flex align-items-center mb-3">
+              <img class="me-3" src="assets/icon-website.svg" alt="">
+              <div class="name-link">https://github.blog</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="twitter-account d-flex align-items-center mb-3">
+              <img class="me-3" src="assets/icon-twitter.svg" alt="">
+              <div class="name-twitter">Not Available</div>
+            </div>
+            <div class="company-git d-flex align-items-center">
+              <img class="me-3" src="assets/icon-company.svg" alt="">
+              <div class="name-company">@github</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
