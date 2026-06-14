@@ -57,7 +57,7 @@ body {
 
 
 .container {
-    width: 750px;
+    width: 750px !important;
 }
 
 .header {
