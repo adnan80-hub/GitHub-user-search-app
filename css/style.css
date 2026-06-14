@@ -49,10 +49,15 @@ body.theme-dark {
 body {
     font-family: "Space Mono", monospace !important;
     background-color: var(--white-100) !important;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+
+.container {
+    width: 750px;
 }
 
 .header {
